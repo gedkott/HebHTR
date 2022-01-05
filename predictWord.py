@@ -24,7 +24,7 @@ def getModel(decoder_type):
         decoderType = DecoderType.BestPath
 
     model = Model(open(FilePaths.fnCharList).read(), decoderType,
-                  mustRestore=True)
+                  mustRestore=False)
     return model
 
 

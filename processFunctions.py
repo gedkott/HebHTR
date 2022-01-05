@@ -8,7 +8,7 @@ regex = r'^[.,/"=+_?!*%~\'{}\[\]:().,;]+$'
 def preprocessImageForPrediction(img, imgSize):
     # create target image and copy sample image into it
     (wt, ht) = imgSize
-    (h, w) = img.shape
+    (h, w, _) = img.shape
     fx = w / wt
     fy = h / ht
     f = max(fx, fy)
